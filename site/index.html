@@ -8,5 +8,73 @@
 </head>
 <body>
 <h1>Jak obejít blokaci internetových stránek?</h1>
+<p>Možností blokování Internetu z různých důvodů je několik, stejně tak je více možností, jak takovou blokaci obcházet.</p>
+<p>Na této stránce se dozvíte, jak se dostat na blokované stránky pomocí:</p>
+<ol>
+	<li><a href="#tor">programu Tor</a></li>
+	<li><a href="#vpn">VPN (Virtual Private Network)</a></li>
+	<li><a href="#opera">prohlížeče Opera</a></li>
+	<li><a href="#dns">změny nastavení DNS</a></li>
+</ol>
+
+<h2 id="tor">Tor</h2>
+<p>Program používaný např. novináři v zemích, ve kterých se potlačuje svoboda projevu.</p>
+<ul>
+	<li>Legální v ČR: ano</li>
+	<li>Zdarma: ano</li>
+	<li>Kdy bude fungovat: proti všem způsobům blokace</li>
+	<li>Kdy nebude fungovat: pokud poskytovatel připojení bude blokovat Tor</li>
+	<li>Rychlost: bude pomalejší, než klasické připojení, protože spojení jde přes více různých míst na zemi</li>
+	<li>Na co si dát pozor: při stahování programů se přesvědčte, že je stahujete pomocí HTTPS, nebo raději pomocí Toru nestahujte spustitelné programy vůbec</li>
+</ul>
+<h3>Instalace a spuštění</h3>
+<ol>
+	<li>Stáhněte Tor na <a href="https://www.torproject.org/">https://www.torproject.org/</a> (přesvědčte se, že po načtení stránky je na začátku adresy v prohlížeči uvedeno <code>https://</code>)
+	<li>Postupujte podle <a href="https://www.youtube.com/watch?v=65mQivpxdio">videa na YouTube</a></li>
+</ol>
+
+<h2 id="vpn">VPN</h2>
+<p>Používají často firmy pro zaměstnance, kteří pracují z domova, ale i soukromé osoby pro zajištění bezpečného přístupu k Internetu při připojení z veřejných míst, kaváren apod.</p>
+<ul>
+	<li>Legální v ČR: ano</li>
+	<li>Zdarma: většinou musíte za používání platit nějaké drobné, někdy např. prvních 14 dní zdarma</li>
+	<li>Kdy bude fungovat: proti všem způsobům blokace</li>
+	<li>Kdy nebude fungovat: pokud poskytovatel připojení bude blokovat VPN</li>
+	<li>Rychlost: bude pomalejší, než klasické připojení, záleží na zátěži VPN serverů</li>
+	<li>Na co si dát pozor: někteří poskytovatelé VPN služeb mohou vést záznamy, na jaké stránky chodíte</li>
+</ul>
+<h3>Instalace</h3>
+<p>... bude doplněna</p>
+
+<h2 id="opera">Opera</h2>
+<p>Prohlížeč Opera od verze 38 nabízí "VPN" zdarma. Technicky to není VPN, ale proxy server pro prohlížeč. Je zdarma a neomezená.</p>
+<ul>
+	<li>Legální v ČR: ano</li>
+	<li>Zdarma: ano</li>
+	<li>Kdy bude fungovat: proti všem způsobům blokace</li>
+	<li>Kdy nebude fungovat: pokud poskytovatel připojení bude blokovat VPN</li>
+	<li>Rychlost: bude pomalejší, než klasické připojení, záleží na zátěži VPN serverů</li>
+	<li>Na co si dát pozor: výrobce prohlížeče Opera se prodává konsorciu čínských firem</li>
+</ul>
+<h3>Instalace a použití</h3>
+<ol>
+	<li>"VPN" je aktuálně dostupná pouze v <a href="https://www.opera.com/cs/developer">Opeře pro vývojáře</a></li>
+</ol>
+
+<h2 id="dns">Google DNS</h2>
+<p>DNS servery převádí domény na IP adresy, provozovatelé DNS serverů mohou takové převody blokovat, stačí ale použít servery např. z jiné země, kterým české Ministertvo financí nemůže blokování přikázat. Často se používají <a href="https://developers.google.com/speed/public-dns/docs/using">servery Google</a>, tedy servery s IP adresami 8.8.8.8 a 8.8.4.4.</p>
+<ul>
+	<li>Legální v ČR: ano</li>
+	<li>Zdarma: ano</li>
+	<li>Kdy bude fungovat: proti blokování domén, tedy pomocí DNS</li>
+	<li>Kdy nebude fungovat: pokud poskytovatel připojení bude blokovat přístup na IP adresy nebo na jednotlivé stránky nebo DNS servery Google</li>
+	<li>Rychlost: nepatrně pomalejší první načtení stránky, poté stejně rychlé jako klasické připojení</li>
+	<li>Na co si dát pozor: -</li>
+</ul>
+<h3>Popis nastavení</h3>
+<p>... bude doplněn</p>
+
+<hr>
+Obsah této stránky můžete doplnit posláním <em>pull requestu</em> na <a href="https://github.com/spaze/jakobejitblokaci.cz">GitHubu</a>.
 </body>
 </html>
