@@ -67,18 +67,21 @@
 	<li>"VPN" je aktuálně dostupná pouze v <a href="https://www.opera.com/cs/developer">Opeře pro vývojáře</a></li>
 </ol>
 
-<h2 id="dns">Google DNS</h2>
-<p>DNS servery převádí domény na IP adresy, provozovatelé DNS serverů mohou takové převody blokovat, stačí ale použít servery např. z jiné země, kterým české Ministertvo financí nemůže blokování přikázat. Často se používají <a href="https://developers.google.com/speed/public-dns/docs/using">servery Google</a>, tedy servery s IP adresami 8.8.8.8 a 8.8.4.4.</p>
+<h2 id="dns">Google DNS / OpenDNS</h2>
+<p>DNS servery převádí domény na IP adresy, provozovatelé DNS serverů mohou takové převody blokovat, stačí ale použít servery např. z jiné země, kterým české Ministertvo financí nemůže blokování přikázat. Často se používají <a href="https://developers.google.com/speed/public-dns/docs/using">servery Google</a>, tedy servery s IP adresami 8.8.8.8 a 8.8.4.4 nebo <a href="https://www.opendns.com/">OpenDNS</a>, IP adresy 208.67.222.123 a 208.67.220.123</p>
 <ul>
 	<li>Legální v ČR: ano</li>
 	<li>Zdarma: ano</li>
 	<li>Kdy bude fungovat: proti blokování domén, tedy pomocí DNS</li>
-	<li>Kdy nebude fungovat: pokud poskytovatel připojení bude blokovat přístup na IP adresy nebo na jednotlivé stránky nebo DNS servery Google</li>
+	<li>Kdy nebude fungovat: pokud poskytovatel připojení bude blokovat přístup na IP adresy nebo na jednotlivé stránky nebo DNS servery Google / OpenDNS</li>
 	<li>Rychlost: nepatrně pomalejší první načtení stránky, poté stejně rychlé jako klasické připojení</li>
 	<li>Na co si dát pozor: -</li>
 </ul>
 <h3>Popis nastavení</h3>
-<p>... naleznete <a href="https://developers.google.com/speed/public-dns/docs/using">na stránkách Google</a>, český překlad bude doplněn</p>
+<ul>
+	<li>Google DNS: <a href="https://developers.google.com/speed/public-dns/docs/using">na stránkách Google</a>, český překlad bude doplněn</li>
+	<li>OpenDNS: <a href="https://www.opendns.com/setupguide/?url=familyshield">na stránkách OpenDNS</a>, po <a href="https://signup.opendns.com/homefree/">registraci</a> je možná vlastní konfigurace blacklistu (s úspěchem lze použít třeba pro blokování porna v zařízení vašich dětí ap.)</li>
+</ul>
 
 <hr>
 Obsah této stránky můžete doplnit posláním <em>pull requestu</em> na <a href="https://github.com/spaze/jakobejitblokaci.cz">GitHubu</a>.
