@@ -86,6 +86,16 @@
 	<li>Google DNS: <a href="https://developers.google.com/speed/public-dns/docs/using">na stránkách Google</a>, český překlad bude doplněn</li>
 	<li>OpenDNS: <a href="https://www.opendns.com/setupguide/?url=familyshield">na stránkách OpenDNS</a>, po <a href="https://signup.opendns.com/homefree/">registraci</a> je možná vlastní konfigurace blacklistu (s úspěchem lze použít třeba pro blokování porna v zařízení vašich dětí ap.)</li>
 </ul>
+<h3>Instalace</h3>
+<ol>
+	<li>Spustíme příkazový řádek (cmd) jako Administrátor</li>
+	<li>Nastaváme DNS server pro síťovou kartu na server Googlu</li>
+	<ul>
+		<li>Pro bezdrátové Wi-Fi připojení<code>netsh interface ipv4 set dnsservers "Wi-Fi" static 8.8.8.8 primary</code></li>
+		<li>Pro kabelové Ethernet připojení <code>netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary</code></li>
+	</ul>
+	<li>Nakonec vymažeme DNS cache pomocí příkazu <code>ipconfig /flushdns</code></li>
+</ol>
 
 <hr>
 Obsah této stránky můžete doplnit posláním <em>pull requestu</em> na <a href="https://github.com/spaze/jakobejitblokaci.cz">GitHubu</a>.
