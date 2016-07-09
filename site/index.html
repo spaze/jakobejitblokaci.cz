@@ -23,6 +23,7 @@
 	<li><a href="#tor">programu Tor</a></li>
 	<li><a href="#vpn">VPN (Virtual Private Network)</a></li>
 	<li><a href="#proxy">Proxy server</a></li>
+  <li><a href="#socksproxy">SSH socks proxy server</a></li>
 	<li><a href="#opera">prohlížeče Opera</a></li>
 	<li><a href="#dns">změny nastavení DNS</a></li>
 </ol>
@@ -75,6 +76,20 @@
 	<li><a href="https://lynt.cz/blog/proxy-server-na-digital-ocean-snadno-a-rychle">Návod na zprovoznění jednoduchého proxy serveru u poskytovatele Digital Ocean</a></li>
 </ol>
 
+<h2 id="socksproxy">SSH socks proxy server</h2>
+<p>Při připojení ke vzdálenému serveru pomocí šifrovaného protokolu lze použít dynamické tunelování portů, které lze použít jako Socks Proxy.</p>
+<ul>
+	<li>Legální v ČR: ano</li>
+	<li>Zdarma: je třeba pořídit vlastní (virtuální) server/jiné zařízení podporující SSH - od 5$ za měsíc</li>
+	<li>Kdy bude fungovat: proti všem způsobům blokace</li>
+	<li>Kdy nebude fungovat: pokud poskytovatel bude blokovat SSH provoz</li>
+	<li>Rychlost: bude pomalejší, než klasické připojení, záleží na zátěži proxy serverů a na lince, která k nim vede</li>
+	<li>Na co si dát pozor: -</li>
+</ul>
+<h3>Popis nastavení</h3>
+<ol>
+	<li><a href="/i/socks-proxy.png">Nastavení SSH klienta a prohlížeče</a></li>
+</ol>
 
 <h2 id="opera">Proxy servery v prohlížeči Opera</h2>
 <p>Prohlížeč Opera od verze 38 nabízí "VPN" zdarma. Technicky to není VPN, ale proxy server pro prohlížeč. Je zdarma a neomezená.</p>
