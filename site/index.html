@@ -22,6 +22,7 @@
 <ol>
 	<li><a href="#tor">programu Tor</a></li>
 	<li><a href="#vpn">VPN (Virtual Private Network)</a></li>
+	<li><a href="#proxy">Proxy server</a></li>
 	<li><a href="#opera">prohlížeče Opera</a></li>
 	<li><a href="#dns">změny nastavení DNS</a></li>
 </ol>
@@ -54,17 +55,18 @@
 </ul>
 <h3>Instalace</h3>
 <ul>
-<li><a href="http://lynt.cz/blog/l2tp-vpn-v-aws-snadno-a-rychle">Návod na zprovoznění L2TP VPN serveru v cloudových službách</a></li>
+<li><a href="https://lynt.cz/blog/l2tp-vpn-v-aws-snadno-a-rychle">Návod na zprovoznění L2TP VPN serveru v cloudových službách</a></li>
 <li><a href="https://www.root.cz/clanky/nasazujeme-openvpn-snadno-a-rychle-navod/">Návod na instalaci OpenVPN na Linuxový server</a></li>
 </ul>
 
+
 <h2 id="proxy">Proxy server</h2>
-<p>Proxy server se nejčastěji používá ve firmách k omezování přístupů k určitým stránkám na internetu. Vlastní server v cizí zemi však lze použít k úplně obrácenému účelu.</p>
+<p>Proxy server se nejčastěji používá ve firmách k omezování přístupů k určitým stránkám na internetu. Vlastní server v cizí zemi však lze použít k úplně obrácenému účelu. Proxy lze provozovat na libovolném portu a tím obejít další možné blokace.</p>
 <ul>
 	<li>Legální v ČR: ano</li>
 	<li>Zdarma: je třeba pořídit vlastní (virtuální) server - od 5$ za měsíc</li>
-	<li>Kdy bude fungovat: proti všem způsobům blokace</li>
-	<li>Kdy nebude fungovat: pokud poskytovatel bude blokovat provoz do zahraničí (proxy server lze provozovat i na obecném portu 80)</li>
+	<li>Kdy bude fungovat: proti blokaci založené na blacklistu cílových IP adres nebo inspekce provozu na portu 80 a 443</li>
+	<li>Kdy nebude fungovat: pokud poskytovatel bude blokovat provoz do zahraničí, nebo bude použita hlubší kontrola obsahu packetů</li>
 	<li>Rychlost: bude pomalejší, než klasické připojení, záleží na zátěži proxy serverů a na lince, která k nim vede</li>
 	<li>Na co si dát pozor: -</li>
 </ul>
@@ -72,6 +74,7 @@
 <ol>
 	<li><a href="https://lynt.cz/blog/proxy-server-na-digital-ocean-snadno-a-rychle">Návod na zprovoznění jednoduchého proxy serveru u poskytovatele Digital Ocean</a></li>
 </ol>
+
 
 <h2 id="opera">Proxy servery v prohlížeči Opera</h2>
 <p>Prohlížeč Opera od verze 38 nabízí "VPN" zdarma. Technicky to není VPN, ale proxy server pro prohlížeč. Je zdarma a neomezená.</p>
