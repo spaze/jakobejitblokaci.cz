@@ -1,5 +1,5 @@
 CN=jakobejitblokaci.cz
-PRIVKEY=/etc/nginx/certs/$CN.privkey.pem
+PRIVKEY_CMD="ecparam -genkey -name prime256v1 -out %s"
 CERT_DIR=/etc/nginx/certs
 SUBJECT="/C=CZ/ST=Prague/L=Prague/O=jakobejitblokaci.cz/emailAddress=$SUBJECT_EMAIL/CN=$CN"
 WEBROOT_DIR=/srv/www/$CN
