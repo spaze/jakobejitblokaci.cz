@@ -26,6 +26,7 @@
 	<li><a href="#vpn">VPN (Virtual Private Network)</a></li>
 	<li><a href="#opera">prohlížeče Opera</a></li>
 	<li><a href="#dns">změny nastavení DNS</a></li>
+	<li><a href="#ssh">SSH serveru</a></li>
 </ol>
 
 <h2 id="tor">Tor</h2>
@@ -97,6 +98,23 @@
 	<li>Quad9: <a href="https://www.quad9.net/">anglicky</a></li>
 </ul>
 
+<h2 id="ssh">SSH tunel/proxy</h2>
+<p>Varianta spíše pro pokročilejší uživatele. Pokud máte možnost připojení k zahraničnímu SSH serveru (není potřeba root uživatele, takže lze poprosit například známého o vytvoření účtu, jinak vlastní VPS), lze využívat určitých schopností SSH serveru (určitě openssh a nejspíše i jiných implementací) - konkrétně tunelování portů a nejlépe schopnosti vytvořit kompletní SOCKS5 proxy server.</p>
+<ul>
+    <li>Legální v ČR: ano</li>
+    <li>Zdarma: většinou ne, ačkoliv existují firmy poskytující výkonově omezené VPS (Virtuální servery), pokud máte dobrého známého v cizině s linuxovým serverem a dobrou konektivitou, lze mít i zadarmo</li>
+    <li>Kdy bude fungovat: proti všem způsobům blokace (je nutné přes SOCKS směrovat i DNS dotazy, což nemusí umět všechny SW/prohlížeče!)</li>
+    <li>Kdy nebude fungovat: pokud někdo bude blokovat SSH nebo jinou, než HTTP(s) komunikaci (například transparentní firemní proxy)</li>
+    <li>Rychlost: podle konektivity serveru (řetěz je silný tak, jako jeho nejslabší článek), v praxi rozdíl téměř neznatelný</li>
+    <li>Na co si dát pozor: ?</li>
+</ul>
+<h3>Popis nastavení</h3>
+<p>Pokud už máte možnost připojení k SSH serveru, pak... 
+    <ul>
+        <li>Na windows potřebujete PuTTY, v nastavení <em>Connection -> SSH -> Tunnels</em> přidáte <em>Forwarded port</em> typu <em>Dynamic</em>. Jako <em>Source port</em> uveďte nějaké číslo vyšší než 1024 (třeba 9999). Budete ho ještě potřebovat. V sekci Basic options vyplníte adresu a port vašeho serveru</li> 
+        <li>Na linuxu stačí příkaz <em>ssh your.server.address -D[socksport]</em></li>
+    </ul>
+    Poté už stačí v prohlížeči nastavit proxy na localhost:9999 (či jiný port dle vašeho výběru). 
 <hr>
 Obsah této stránky můžete doplnit posláním <em>pull requestu</em> na <a href="https://github.com/spaze/jakobejitblokaci.cz">GitHubu</a>.
 </body>
